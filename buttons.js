@@ -3,6 +3,7 @@
 */
 $('#sendSMS').on('click',function() {
     console.log('#sendSMS');
+    $('#resultPlugin').html('number:' + $('#smsNumber').val());
     plugin.sendSMS($('#smsNumber').val(),  $('#smsMessage').val());
 });
 

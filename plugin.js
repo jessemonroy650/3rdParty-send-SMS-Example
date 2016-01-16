@@ -18,8 +18,8 @@ var plugin = {
             }
         };
 
-        //var success = function () { $('#resultPlugin').html('Message sent successfully'); };
-        //var error = function (e) { $('#resultPlugin').html('Message Failed:' + e); };
+        var success = function () { $('#resultPlugin').html('Message sent successfully'); };
+        var error = function (e) { $('#resultPlugin').html('Message Failed:' + e); };
         sms.send(number, message, options, success, error);
     },
     isAvailable : function (type) {
